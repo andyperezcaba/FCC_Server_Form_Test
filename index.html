@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <main>
-            <header>
-                <h1>Koala Koffee Survey Form</h1>
-                <p>Thank you for taking the time to help us improve.</p>
-            </header>
-        </main>
-       <form action="get">
-           <div>
-               <label for="name"> Name </label>
-               <input type="text" name="name" id="name" placeholder="Enter Your name">
-                <br>
-               <label for="email">Email </label>
-               <input type="email" name="email" id="email" placeholder="Enter Your Email">
-               <br>
-               <label for="age">Age (optional) </label>
-               <input type="text" name="age" id="age" placeholder="Age">
-           </div>
-       </form>
-        
-    </body>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+        <form action="">
+            <h1>Koala Koffee Survey Form</h1>
+            <p>Thank you for helping us improve our company.</p>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Your Email" required>
+            <label for="age">Age
+                <span class="clue">(Optional)</span>
+            </label>
+            <input type="number" min="13" max="100" placeholder="Age">
+            <label for="frequency">How often do you drink coffee?</label>
+            <select name="frequency-select" id="frequency" required>
+                <option value="" selected disabled>Select Frequency</option>
+                <option value="often">Often</option>
+                <option value="sometimes">Sometimes</option>
+                <option value="rarely">Rarely</option>
+                <option value="never">Never</option>
+            </select>
+            <label>Would you recommend Koala Koffee to a friend? 
+                <input type="radio" name="recommendation" value="yes" checked>
+                <label for="recommendation">Yes</label>
+                <input type="radio" name="recommendation" value="maybe">
+                <label for="recommendation">Maybe</label>
+                <input type="radio" name="recommendation" value="no">
+                <label for="recommendation">No</label>
+            </label>
+            <label>How can we improve?
+                <select name="improve-select" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="customer service">Customer Service</option>
+                    <option value="speed">Speed</option>
+                    <option value="costs">Costs</option>
+                    <option value="quality">Quality</option>
+                </select>
+            </label>
+            <label>What Coffee beverages do you enjoy drinking?
+                <span class="clue">(check all that apply)</span>
+                <input type="checkbox" id="cafecubano" value="cafe cubano">
+                <label for="cafecubano">Cafe Cubano</label>
+                <input type="checkbox" id="flatwhite" value="flat white">
+                <label for="flatwhite">Flat White</label>
+                <input type="checkbox" id="mazagran" value="mazagran">
+                <label for="mazagran">Mazagran Coffee</label>
+                <input type="checkbox" id="frappe" value="frappe">
+                <label for="frappe">Frappe</label>
+                <input type="checkbox" id="irish" value="irish">
+                <label for="irish">Irish Coffee</label>
+                <input type="checkbox" id="breve" value="breve">
+                <label for="breve">Breve</label>
+                <input type="checkbox" id="longblack" value="longblack">
+                <label for="longblack">Long Black</label>
+                <input type="checkbox" id="turkish" value="turkish">
+                <label for="turkish">Turkish Coffee</label>
+                <input type="checkbox" id="cafegammosa" value="cafegammosa">
+                <label for="cafegammosa">Cafe Gammosa</label>
+                <input type="checkbox" id="eiscaffee" value="eiscaffee">
+                <label for="eiscaffee">Eiscaffee</label>
+                <input type="checkbox" id="blacktie" value="blacktie">
+                <label for="blacktie">Black Tie</label>
+            </label>
+            <label>Any additional suggestions or comments?
+                <input type="text" name="">
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+   </div>
+    
+</body>
 </html>

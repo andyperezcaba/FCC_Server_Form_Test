@@ -1,8 +1,3 @@
 body {
-    display: grid;
-    background: linear-gradient(0deg, rgba(245, 222, 179, 0.452), rgba(245, 222, 179, 0.452)), url(https://www.ecopetit.cat/wpic/mpic/5-53621_coffee-wallpaper-high-resolution-coffee.jpg);
-    background-size: cover;
-    justify-items: center;
+    margin: 0;
 }
-
-
