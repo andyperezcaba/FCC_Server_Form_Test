@@ -1,3 +1,83 @@
 body {
     margin: 0;
+    background: linear-gradient(0deg, rgba(100, 28, 14, 0.404), rgba(100, 28, 14, 0.404)), url(https://www.ecopetit.cat/wpic/mpic/5-53621_coffee-wallpaper-high-resolution-coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: honeydew;
 }
+
+header > h1 {
+    margin: 0;
+} 
+
+header > p {
+    font-style: italic;
+    margin: 5px;
+    font-size: 17px;
+}
+
+header {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+    background-color: rgba(100, 28, 14, 0.856);
+    padding: 40px 30px;
+    width: 50vw;
+    display: grid;
+    row-gap: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 850px)
+{
+    form {
+        width: 70%;
+    }
+}
+
+div,
+div > label {
+    display: grid;
+    gap: 5px;
+}
+
+div > input,
+select,
+option {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    list-style: none;
+}
+
+.textinput {
+    padding: 10px 0px 100px 10px;
+    font-size: 17px;
+}
+
+.submit {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(148, 103, 95);
+    border: none;
+    border-radius: 5px;
+    color: honeydew;
+    font-size: 15px;
+}
+
+.clue {
+    font-size: 12px;
+}
+
